@@ -1,27 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" 
-   "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
     <key>PayloadContent</key>
     <array>
         <dict>
             <key>PayloadType</key>
-            <string>com.apple.dns-settings.managed</string>
+            <string>com.apple.dns.proxy</string>
             <key>PayloadVersion</key>
             <integer>1</integer>
             <key>PayloadIdentifier</key>
-            <string>com.ultimatehellobmlocker.customdns</string>
+            <string>com.ultimatehellobmlocker.dns</string>
             <key>PayloadUUID</key>
-            <string>AAAAAAAA-BBBB-CCCC-DDDD-EEEEEEEEEEEE</string>
+            <string>6a1c0124-4ee3-4d33-b36a-405270c1e7f4</string>
             <key>PayloadDisplayName</key>
-            <string>Ultimate HelloBM DNS</string>
-            <key>DNS</key>
-            <array>
+            <string>Ultimate HelloBM Blocker</string>
+            <key>DNSSettings</key>
+            <dict>
+                <key>ServerAddress</key>
                 <string>195.26.250.101</string>
-            </array>
-            <key>DomainName</key>
-            <string>.</string>
+                <key>Port</key>
+                <integer>853</integer>
+                <key>UseTLS</key>
+                <true/>
+            </dict>
         </dict>
     </array>
     <key>PayloadType</key>
@@ -29,10 +32,10 @@
     <key>PayloadVersion</key>
     <integer>1</integer>
     <key>PayloadIdentifier</key>
-    <string>com.ultimatehellobmlocker.root</string>
+    <string>com.ultimatehellobmlocker</string>
     <key>PayloadUUID</key>
-    <string>FFFFFFFF-1111-2222-3333-444444444444</string>
+    <string>ANOTHER-UUID-HERE</string>
     <key>PayloadDisplayName</key>
-    <string>Ultimate HelloBM DNS Config</string>
+    <string>Ultimate HelloBM Blocker</string>
 </dict>
 </plist>
